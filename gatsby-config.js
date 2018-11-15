@@ -2,12 +2,14 @@ module.exports = {
   siteMetadata: {
     title: 'ChalkDust Consulting',
     description: 'Git Managed CMS',
+    siteUrl: 'https://chalkdustservice.netlify.com/',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'gatsby-plugin-netlify-cms',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -35,6 +37,7 @@ module.exports = {
         name: 'images'
       }
     },
-    'gatsby-transformer-remark'
+    'gatsby-transformer-remark', 
+    
   ],
 }

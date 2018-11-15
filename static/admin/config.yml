@@ -1,0 +1,17 @@
+backend:
+  name: github
+  branch: master
+  repo: persephonepunch/gatsbycms
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "service"
+    label: "Service"
+    folder: "src/service"
+    create: true
+    slug: "{{slug}}"
+    fields:
+     - { label: "Service", name: "title", widget: 'string' }
+     - { label: "Tools", name: "tools", widget: 'markdown' }
